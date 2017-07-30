@@ -61,8 +61,8 @@ public class PreviewActivity extends Activity implements CameraInterface.CameraO
     }
 
     private void initView() {
-        CameraView mCameraView = findViewById(R.id.sfvPreview);
-        mDrawView = findViewById(R.id.viewDraw);
+        CameraView mCameraView = (CameraView) findViewById(R.id.sfvPreview);
+        mDrawView = (DrawView) findViewById(R.id.viewDraw);
         mHolder = mCameraView.getHolder();
 
         new Thread(new Runnable() {
